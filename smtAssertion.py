@@ -46,7 +46,7 @@ class smtAssertion:
         assertion = "(assert "
         for pair in self.smtPairs:
             assertion += pair.outputPair()
-        assertion += ")"
+        assertion += ")\n"
 
         return assertion
 
