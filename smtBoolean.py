@@ -5,7 +5,7 @@ class smtBoolean:
         self.name = name
 
     def outputDeclaration(self):
-        return ("(declare-fun " + self.name + "() Bool\n")
+        return ("(declare-fun " + self.name + "() Bool)\n")
 
     def outputName(self):
         return self.name
