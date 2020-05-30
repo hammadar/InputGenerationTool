@@ -6,7 +6,7 @@ import random
 class smtAssertion:
 
     smtBooleans = []
-    operations = ["and", "or", "=>", "<=>"]
+    operations = ["and", "or", "=>"]
     smtPairs = []
 
     def __init__(self, smtBooleans):
