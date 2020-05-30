@@ -8,4 +8,4 @@ for name in names:
     booleans.append(smtBoolean.smtBoolean(name))
 
 assertion = smtAssertion.smtAssertion(booleans)
-assertion.outputAssertion()
+print(assertion.outputAssertion())

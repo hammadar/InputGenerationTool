@@ -16,14 +16,14 @@ class smtPair:
         if (isinstance(self.lhs, smtPair)):
             expressionToReturn += self.lhs.outputPair()
         else:
-            expressionToReturn += self.lhs.outputName
+            expressionToReturn += self.lhs.outputName()
 
         expressionToReturn += " ("
 
         if (isinstance(self.rhs, smtPair)):
             expressionToReturn += self.rhs.outputPair()
         else:
-            expressionToReturn += self.rhs.outputName
+            expressionToReturn += self.rhs.outputName()
 
         expressionToReturn += "))"
         return expressionToReturn

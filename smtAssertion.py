@@ -6,7 +6,7 @@ import random
 class smtAssertion:
 
     smtBooleans = []
-    operations = ["and", "or", "not", "=>", "<=>"]
+    operations = ["and", "or", "=>", "<=>"]
     smtPairs = []
 
     def __init__(self, smtBooleans):
@@ -20,7 +20,7 @@ class smtAssertion:
 
 
     def generatePairs(self):
-        numPairs = random.choice(range(1,100))
+        numPairs = random.choice(range(1,3))
         lhs = None
         rhs = None
         operation = None
@@ -45,7 +45,7 @@ class smtAssertion:
     def outputAssertion(self):
         assertion = "(assert "
         for pair in self.smtPairs:
-            assertion += pair.outputPair
+            assertion += pair.outputPair()
         assertion += ")"
 
         return assertion
