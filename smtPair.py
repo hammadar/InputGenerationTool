@@ -25,4 +25,5 @@ class smtPair:
         else:
             expressionToReturn += self.rhs.outputName
 
-        expressionToReturn += ")"
+        expressionToReturn += "))"
+        return expressionToReturn
