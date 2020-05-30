@@ -20,7 +20,7 @@ class smtAssertion:
 
 
     def generatePairs(self):
-        numPairs = random.choice(range(1,3))
+        numPairs = random.choice(range(1,100))
         lhs = None
         rhs = None
         operation = None
