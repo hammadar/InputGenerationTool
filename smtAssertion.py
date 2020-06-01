@@ -21,28 +21,6 @@ class smtAssertion:
 
     def generatePairs(self):
         numPairs = random.choice(range(1,10))
-        '''lhs = None
-        rhs = None
-        operation = None
-
-        for i in range(numPairs):
-            x = random.choice([False, True])
-            if (i == (numPairs - 1)):
-                y = random.choice([False, True])
-            else:
-                y = True
-            if (not x):
-                lhs = random.choice(self.smtBooleans)
-            else:
-                lhs = smtPair.smtPair(random.choice(self.smtBooleans), random.choice(self.smtBooleans), random.choice(self.operations))
-
-            if (not y):
-                rhs = random.choice(self.smtBooleans)
-            else:
-                rhs = smtPair.smtPair(random.choice(self.smtBooleans), random.choice(self.smtBooleans), random.choice(self.operations))
-
-            operation = random.choice(self.operations)
-            self.smtPairs.append(smtPair.smtPair(lhs, rhs, operation))'''
         self.smtPairs = self.generateNewPairs(0, numPairs)
 
 
